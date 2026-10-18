@@ -1,0 +1,94 @@
+Title: Correlation vs Covariance in Statistics
+
+Introduction
+
+In statistics and data science, understanding relationships between variables is extremely important.
+Two fundamental measures used to describe relationships between variables are Covariance and Correlation.
+
+Both covariance and correlation measure how two variables move together. However, they differ in scale, interpretation, and usability.
+
+Section 1: Covariance
+
+Covariance measures the direction of the relationship between two variables.
+
+If two variables increase together, the covariance is positive.
+If one variable increases while the other decreases, the covariance is negative.
+
+Formula for Covariance:
+
+Cov(X,Y) = Σ (Xi - X̄)(Yi - Ȳ) / (n - 1)
+
+Where:
+Xi = individual value of variable X
+Yi = individual value of variable Y
+X̄ = mean of X
+Ȳ = mean of Y
+n = number of observations
+
+Interpretation:
+
+Positive Covariance:
+Both variables move in the same direction.
+
+Negative Covariance:
+Variables move in opposite directions.
+
+Covariance close to zero:
+No clear relationship.
+
+Limitation of Covariance:
+
+The magnitude of covariance is difficult to interpret because it depends on the units of the variables.
+
+Section 2: Correlation
+
+Correlation measures both the direction and the strength of the relationship between two variables.
+
+Unlike covariance, correlation is standardized and always lies between -1 and +1.
+
+Formula for Correlation (Pearson Correlation):
+
+r = Cov(X,Y) / (σx * σy)
+
+Where:
+Cov(X,Y) = covariance between X and Y
+σx = standard deviation of X
+σy = standard deviation of Y
+
+Interpretation:
+
+Correlation close to +1:
+Strong positive relationship.
+
+Correlation close to -1:
+Strong negative relationship.
+
+Correlation close to 0:
+Weak or no linear relationship.
+
+Section 4: Key Differences
+
+Covariance:
+Shows direction of relationship.
+Value range is unbounded.
+Depends on units of measurement.
+Hard to interpret directly.
+
+Correlation:
+Shows both direction and strength.
+Values range from -1 to +1.
+Unit free.
+Easy to interpret.
+
+Section 5: Practical Use in Data Science
+
+Covariance is often used internally in statistical calculations.
+
+Correlation is more commonly used in data analysis, machine learning, and feature selection.
+
+For example:
+Data scientists use correlation matrices to identify relationships between features in a dataset.
+
+Conclusion
+
+Both covariance and correlation help us understand relationships between variables.
